@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(188, 244, 225);
+}
+
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+
+input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2) ;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgb(195, 233, 233);
+    color: #333;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: rgb(4, 232, 133);
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+.search-result img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#search-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.search-result {
+    aspect-ratio: 16/9;
+    margin-bottom: 60px;
+    width: 30%;
+    height:300px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.search-result:hover img {
+    opacity: 0.8;
+}
+
+.search-result a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10;
+    text-transform: capitalize;
+}
+
+#sm-btn {
+    padding: 10px 20px;
+    background-color: rgb(52, 147, 194);
+    border: navajowhite;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    display: none;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .search-result {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        box-shadow: none;
+    }
+    .search-result img {
+        aspect-ratio: 16/9;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
