@@ -83,7 +83,7 @@ input {
     text-decoration: none;
     color: #333;
     display: block;
-    padding: 10;
+    padding-left: 10px;
     text-transform: capitalize;
 }
 
